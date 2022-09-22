@@ -10,10 +10,17 @@ public class UserController {
 
     @Autowired
     private UserMapper userMapper;
+//    @Autowired
+//    private UserDao userDao;
 
     @GetMapping("/increaseAndGetAge")
     public int getAgeByUserId(int userId) {
         userMapper.increaseAge(userId);
         return userMapper.getAgeByUserIdForUpdate(userId);
     }
+//    @GetMapping("/findById")
+//    public UserTable getByUserId(Integer userId) {
+//        return userDao.findByUserId(userId);
+//    }
+
 }
