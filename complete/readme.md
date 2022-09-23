@@ -19,3 +19,4 @@
 0. 运行容器 `docker run -d -p 8080:8080 rest-service-complete:lastest`
 1. 普通HTTP请求 `curl http://localhost:8080/greeting?name=ypq` , 状态码200
 2. H2数据库测试 `curl http://localhost:8080/increaseAndGetAge?userId=1` , 状态码200
+3. Jpa方式访问数据库  `curl http://localhost:8080/findById?userId=3`   200
