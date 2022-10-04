@@ -1,10 +1,19 @@
 package com.example.restservice.entity;
 
+import javax.persistence.*;
+
+@Entity
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "USER_ID")
     private int userId;
+    @Column(name = "USER_NAME")
     private String userName;
+    @Column(name = "USER_SEX")
     private String userSex;
+    @Column(name = "USER_AGE")
     private int userAge;
 
     public int getUserId() {

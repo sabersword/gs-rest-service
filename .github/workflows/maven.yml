@@ -28,4 +28,4 @@ jobs:
         REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
         ALIYUN_REGISTRY_USERNAME: ${{ secrets.ALIYUN_REGISTRY_USERNAME }}
         ALIYUN_REGISTRY_PASSWORD: ${{ secrets.ALIYUN_REGISTRY_PASSWORD }}
-      run: mvn clean spring-boot:build-image -U -DskipTests --file complete/pom.xml
+      run: mvn clean spring-boot:build-image -P github -U --file complete/pom.xml
