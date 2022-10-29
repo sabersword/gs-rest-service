@@ -14,4 +14,12 @@ spring:
     init:
       schema-locations: classpath:schema.sql
       data-locations: classpath:data.sql
-      platform: h2
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none # 防止hibernate根据实体初始化表
+    show-sql: true
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true # 匹配时去掉下划线

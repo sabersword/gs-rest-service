@@ -7,8 +7,8 @@ import org.apache.ibatis.annotations.Update;
 @Mapper
 public interface UserMapper {
 
-    @Select("select USER_AGE from USER_TABLE where USER_ID = #{userId} for update")
-    int getAgeByUserIdForUpdate(int userId);
+    @Select("select USER_ID,USER_NAME,USER_SEX,USER_AGE from USER_TABLE where USER_ID = #{userId} for update")
+    User getAgeByUserIdForUpdate(int userId);
 
     @Select("select USER_ID,USER_NAME,USER_SEX,USER_AGE from USER_TABLE where USER_ID=#{userId}")
     User findUserById(int userId);
