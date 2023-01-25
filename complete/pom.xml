@@ -123,7 +123,7 @@
                                     <BP_NATIVE_IMAGE>true</BP_NATIVE_IMAGE>
                                 </env>
                                 <bindings>
-                                    <binding>${basedir}/bindings/internal-dependency-mapping:/platform/bindings/config
+                                    <binding>${basedir}/bindings/local-dependency-mapping:/platform/bindings/config
                                     </binding>
                                     <binding>${basedir}/bindings/local-file:/platform/bindings/local-file
                                     </binding>
